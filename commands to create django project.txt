@@ -1,0 +1,26 @@
+django-admin startproject project-name
+cd project-name
+python manage.py startapp anyname(eg:api)
+
+Go to settings:-> inside install apps
+add 'rest_framework'
+also include the app name 'api' for this case
+
+after creating models:
+to create tables in database:
+python manage.py makemigrations
+python manage.py migrate
+
+to create superuser:
+python manage.py createsuperuser
+admin
+admin
+
+Models need to be imported in admin.py
+
+create file serializers.py in api folder
+
+
+
+torun the server:
+python manage.py runserver
